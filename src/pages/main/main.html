@@ -1,0 +1,46 @@
+<ion-header>
+  <div>
+    <ion-row>
+      <ion-col col-10>
+        <ion-searchbar placeholder="作品、作家、话题"></ion-searchbar>
+      </ion-col>
+      <ion-col col-2>
+        <ion-icon name="notifactions">
+          <ion-badge color="danger">260k</ion-badge>
+        </ion-icon>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="pageMenuSlides">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide {{i==0?'bottomLine':''}}" *ngFor="let item of menus;let i=index;" tappable (click)="selectPageMenu($event,i)">{{item}}</div>
+      </div>
+    </div>
+  </div>
+</ion-header>
+<ion-content>
+<ion-slides #contentSlides (ionSlideDidChange)="slideChanged()">
+  <ion-slide>
+    <page-recommend></page-recommend>
+  </ion-slide>
+  <ion-slide>
+    <page-follow></page-follow>
+  </ion-slide>
+  <ion-slide>
+    <page-works></page-works>
+  </ion-slide>
+  <ion-slide>
+    <page-artist></page-artist>
+  </ion-slide>
+  <ion-slide>
+    <page-words></page-words>
+  </ion-slide>
+  <ion-slide>
+    <page-talk></page-talk>
+  </ion-slide>
+  <ion-slide>
+    <page-video></page-video>
+  </ion-slide>
+</ion-slides>
+</ion-content>

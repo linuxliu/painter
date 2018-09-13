@@ -1,0 +1,37 @@
+<!--
+  Generated template for the FacePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <div class="face_1">
+    <ion-img src="assets/imgs/car.jpeg"></ion-img>
+  </div>
+  <div class="face_2">
+    <button ion-button color="dark" full (click)="goRegister()">手机号注册</button>
+    <button ion-button color="light" full (click)="goLogin()">登录</button>
+    <button ion-button icon-end clear  color="assertive" (click)="goHome()">
+      我先看看
+      <ion-icon name="arrow-dropright"></ion-icon>
+    </button>
+  </div>
+
+  <div class="face_3">
+    <ion-buttons align="center">
+      <button ion-button color="secondary" icon-start clear>
+        <ion-icon name="logo-android"></ion-icon>
+        QQ登录
+      </button>
+      <button ion-button color="secondary"  clear disabled>
+        |
+      </button>
+      <button ion-button color="secondary" icon-start clear>
+        <ion-icon name="logo-android"></ion-icon>
+        微信登录
+      </button>
+    </ion-buttons>
+
+    <p>注册骚人坞即代表您同意<a (click)="openUser()">用户协议</a>和<a href="#">隐私声明</a></p>
+  </div>
+</ion-content>

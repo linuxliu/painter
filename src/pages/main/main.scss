@@ -1,0 +1,24 @@
+page-main {
+
+  .pageMenuSlides {
+    border-bottom: 0.55px solid rgba(0, 0, 0, 0.3);
+    .swiper-container {
+      width: 100%;
+      height: 3rem;
+    }
+    .swiper-slide {
+      background: #fff;
+      color: #333;
+    }
+    .bottomLine {
+      border-bottom: 0.2rem solid #488aff;
+    }
+  }
+  ion-slides {
+    background-color: white;
+    .slide-zoom {
+      height: 100%;
+    }
+  }
+}
+
